@@ -68,18 +68,27 @@ The Apache License 2.0 allows for the following:
 Use and Distribution:
 
 You are free to use, modify, and distribute the software under the terms of this license.
+
+
 Source Code Access:
 
 If you modify the source code and distribute it, you must include a copy of this license and a notice of any changes made.
+
+
 Copyright Notice:
 
 The original copyright notice and license text must be included with every copy of the software.
+
 Patents and Trademarks:
 
 The license grants you a license to any patents that might be infringed by your use of the software. However, it does not grant you rights to use any trademarks associated with the software.
+
+
 Modification and Redistribution:
 
 When redistributing modified versions of the software, you must clearly state the changes made and include the modified license and copyright notices.
+
+
 No Warranty:
 
 The software is provided "as-is," without any warranties or guarantees. The licensors are not responsible for any damages arising from the use of the software.
