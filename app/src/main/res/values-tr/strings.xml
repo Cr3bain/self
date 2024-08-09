@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">Tamam</string>
+    <string name="cancel">İptal</string>
+    <string name="app_name">SELF</string>
+    <string name="inventoryScreen_title">Envanter</string>
+    <string name="warehouseScreen_title">Depolar</string>
+    <string name="warehouseFormScreen_title">Depo</string>
+    <string name="warehouseSelectScreen_title">Depo Seç</string>
+    <string name="warehouseTransferTarget_title">Hedef Depo Seç</string>
+    <string name="warehouseTransferSource_title">Kaynak Depo Seç</string>
+    <string name="suppliersScreen_title">Tedarikçiler</string>
+    <string name="customersScreen_title">Müşteriler</string>
+    <string name="transactionsScreen_title">İşlemler</string>
+    <string name="productScreen_title">Ürün</string>
+    <string name="reportsScreen_title">Raporlar</string>
+    <string name="cameraScreen_title">Kamera</string>
+    <string name="backupScreen_title">Yedekle &amp; Geri Yükle</string>
+    <string name="userScreen_title">Kullanıcı İşlemleri</string>
+    <string name="portal">Portal</string>
+    <string name="productNotFound">Ürün bulunamadı</string>
+    <string name="back_button">Geri</string>
+    <string name="no_item_description">Oops!\nMenü öğesi bulunmuyor.</string>
+    <string name="noProducts">Ürün bulunamadı\nEklemek için + düğmesini kullanın</string>
+    <string name="noTransactions">İşlem bulunamadı</string>
+    <string name="noHistory">Hiç işlem kaydı yok</string>
+    <string name="products">%s Ürün</string>
+    <string name="totalPrice">Toplam Fiyat: %s</string>
+    <string name="allWarehouses">Tüm Depolar</string>
+    <string name="allCustomers">Tüm Müşteriler</string>
+    <string name="allSuppliers">Tüm Tedarikçiler</string>
+    <string name="total">Toplam</string>
+    <string name="supplier">Tedarikçi</string>
+    <string name="customer">Müşteri</string>
+    <string name="description">Açıklama</string>
+    <string name="perUnitPrice">Birim Fiyatı</string>
+    <string name="listEmpty">Liste Boş</string>
+    <string name="clickToAdd">Ekleme için (+)ya basın</string>
+    <string name="transactions">İşlemler</string>
+    <string name="arrivals">Girişler</string>
+    <string name="arrivalDate">Giriş Tarihi</string>
+    <string name="outgoings">Çıkışlar</string>
+    <string name="transfers">Transferler</string>
+    <string name="arrival">Giriş</string>
+    <string name="outgoing">Çıkış</string>
+    <string name="transfer">Transfer</string>
+    <string name="backup">Yedekleme</string>
+    <string name="user">Kullanıcı</string>
+    <string name="returnTransaction">İade</string>
+    <string name="piece">Adet</string>
+    <string name="warehouseLimited">Sınırlı depo</string>
+    <string name="warehouseLimitText">Depo sayısı premium olmayan kullanıcılar için %s ile sınırlı</string>
+    <string name="warehouseHaveTransactionTitle">Depoyu silemezsiniz</string>
+    <string name="warehouseHaveTransactionText">Depo bazı işlemlerde kullanılmış</string>
+    <string name="areYouSure">Emin misiniz?</string>
+    <string name="warehouseDeleteText">%s silinecek</string>
+    <string name="confirm">Onayla</string>
+    <string name="dismiss">Reddet</string>
+    <string name="cantDeleteTitle">Silemezsiniz</string>
+    <string name="cantDeleteText">Ürünler eksiye stoğa düşüyor!</string>
+    <string name="cantDeleteProduct">Bu ürün için bir işlem kaydı bulunuyor</string>
+    <string name="canDeleteText">Ürün kayıtlı işlemlerle birlikte SİLİNECEK</string>
+    <string name="canDeleteProduct">Ürün SİLİNECEK</string>
+    <string name="wannaDeleteProductTitle">Silmek istiyor musunuz?</string>
+    <string name="wannaDeleteProductText">Ürün, işlemden silinecek</string>
+    <string name="nameIsNull">"Ürün adı boş"</string>
+    <string name="barcodeUsing">"Bazı ürünlerde kullanılan barkod"</string>
+    <string name="productSaved">Ürün kaydedildi</string>
+    <string name="productUpdated">Ürün güncellendi</string>
+    <string name="date">Tarih</string>
+    <string name="stockIn">Depodaki Stok</string>
+    <string name="saved">Kaydedildi</string>
+    <string name="updated">Güncellendi</string>
+    <string name="mainWarehouse">Ana Depo</string>
+    <string name="purchasePrice">Alış Fiyatı</string>
+    <string name="sellPrice">Satış Fiyatı</string>
+    <string name="minStock">Minimum Stok</string>
+    <string name="productPicture">Ürün Resmi</string>
+    <string name="nameText">Ad</string>
+    <string name="barcodeText">Barkod</string>
+    <string name="stockCodeText">Stok Kodu</string>
+    <string name="addressText">Adres</string>
+    <string name="cityText">Şehir</string>
+    <string name="countryText">Ülke</string>
+    <string name="phoneNumber">Telefon Numarası</string>
+    <string name="emailText">E-Posta</string>
+    <string name="taxText">Vergi Numarası</string>
+    <string name="websiteText">Web Sitesi</string>
+    <string name="paragraph1">Paragraf 1</string>
+    <string name="paragraph2">Paragraf 2</string>
+    <string name="fileLocationError">Dosya konumuna erişilemedi. Sorun devam ederse uygulamayı yeniden başlatın.</string>
+    <string name="folderAccessError">Klasör erişimi verilmeden yedek geri yüklenemez</string>
+    <string name="restoreFailed">Geri yükleme başarısız oldu.</string>
+    <string name="backupOkTitle">Yedekleme başarılı</string>
+    <string name="backupOkText">Uygulama yeniden başlatılacak.</string>
+    <string name="restoreOkTitle">Geri yükleme başarılı</string>
+    <string name="restoreOkText">Uygulama yeniden başlatılacak.</string>
+    <string name="backupTag">yedek</string>
+    <string name="backupInfoText">Yedek dosyası; Uygulama adı_{tarih-saat bilgisi}.sqlite3 olarak telefon belleğindeki İndirilenler klasörü altında saklanacaktır.</string>
+    <string name="everything">Tüm İşlemler</string>
+    <string name="backupButtonText">Yedekle</string>
+    <string name="restoreButtonText">Geri Yükle</string>
+    <string name="takePhoto">Fotoğraf çek</string>
+    <string name="folderSelectTitle">Klasör seçimi</string>
+    <string name="folderSelectAlert">Android güvenlik kurallarına göre, geri yükleme işlemi için bir klasör oluşturmanız veya belirtmeniz gerekir. Sorun yaşamamak için yedekleme dosyanızı bu klasöre kopyalayın.</string>
+    <string name="fileSelectAlert">Bu esnada (daha sonra yapılabilir), uygulamayı arka plana alarak oluşturduğunuz/seçtiğiniz klasöre yedek dosyanızı kopyalayabilirsiniz. Bir sonraki ekranda dosya seçimi yapılacaktır.</string>
+    <string name="fileSelectTitle">Yedek dosya seçimi</string>
+    <string name="somethingChangeDialogTitle">Bazı şeyler değiştirildi</string>
+    <string name="somethingChangeDialogText">Değişiklikleri kaydetmeden çıkmak istiyor musun ?</string>
+
+
+    <!-- Reports -->
+    <string name="sku">SKU</string>
+    <string name="productName">Ürün Adı</string>
+    <string name="stock">Stok</string>
+    <string name="stockList">Stok Listesi</string>
+    <string name="stockListFileName">Stok_listesi.pdf</string>
+    <string name="docNo">Doc.No</string>
+    <string name="product">Ürün</string>
+    <string name="warehouse">Depo</string>
+    <string name="unitPrice">Adet Fiyatı</string>
+    <string name="totalPricePdf">Toplam Fİyat</string>
+    <string name="arrivalList">Giriş Listesi</string>
+    <string name="arrivalListFileName">Giris_listesi.pdf</string>
+    <string name="outgoingList">Çıkış Listesi</string>
+    <string name="outgoingListFileName">Cikis_listesi.pdf</string>
+    <string name="productList">Ürün Listesi</string>
+    <string name="productListFileName">Urun_listesi.pdf</string>
+    <string name="arrivalBySupplier">Tedarikçiye göre Girişler</string>
+    <string name="outgoingByCustomer">Müşteriye göre Çıkışlar</string>
+
+    <string name="searchWarehouse">Depo adı</string>
+    <string name="searchCustomer">Müşteri adı veya açıklama</string>
+    <string name="searchProduct">Ürün adı veya barkod</string>
+    <string name="searchSupplier">Tedarikçi adı veya açıklama</string>
+    <string name="searchTransaction">İşlem açıklaması</string>
+
+    <!--Google Billing -->
+    <string name="singIn">Giriş yap</string>
+    <string name="singOut">Çıkış yap</string>
+    <string name="purchaseDone">Satın alma başarılı. Uygulamayı yeniden başlatın.</string>
+    <string name="purchaseNotDone">Satın alma tamamlanamadı.</string>
+    <string name="singInGoogleText">Lütfen google ile giriş yapın</string>
+    <string name="subButtonText">Şimdi Başlat</string>
+    <string name="hello">Merhaba,</string>
+    <string name="nonLoginUser">Premiuma katılmadan önce uygulamaya giriş yapmalısınız.</string>
+    <string name="licence">Lisans: </string>
+    <string name="free">Ücretsiz</string>
+    <string name="premium">Premium</string>
+    <string name="orderID">Sipariş ID: %s</string>
+    <string name="purchaseTime">Satın Alım Tarihi: %s</string>
+
+    <string-array name="subTags">
+        <item>Reklamsız kullanım</item>
+        <item>Sınırsız depo</item>
+    </string-array>
+
+    <string name="month">Ay</string>
+
+</resources>

@@ -1,0 +1,41 @@
+package tr.com.gndg.self.core.dataSource.roomDatabase.entity
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import tr.com.gndg.self.domain.model.Customer
+
+@Entity(tableName = "customers")
+data class CustomerEntity(
+    @PrimaryKey(autoGenerate = true)
+    var id : Long = 0L,
+    val uuid: String,
+    val name: String,
+    val address: String?,
+    val city: String?,
+    val country: String?,
+    val zipCode : String?,
+    val phoneNumber: String?,
+    val email: String?,
+    val website: String?,
+    val taxNumber: String?,
+    val discount: Float?,
+    val description: String?,
+    val createDate: Long,
+)
+
+fun CustomerEntity.toCustomer() = Customer(
+    id = this.id,
+    uuid = this.uuid,
+    name = this.name,
+    address = this.address,
+    city = this.city,
+    country = this.country,
+    zipCode = this.zipCode,
+    phoneNumber = this.phoneNumber,
+    email = this.email,
+    website = this.website,
+    taxNumber = this.taxNumber,
+    discount = this.discount,
+    description = this.description,
+    createDate = this.createDate
+)
