@@ -8,15 +8,15 @@ plugins {
 
 android {
     namespace = "tr.com.gndg.self"
-    compileSdk = 34
+    compileSdk = 35
     ndkVersion = "26.1.10909125"
 
     defaultConfig {
         applicationId = "tr.com.gndg.self"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 8
-        versionName = "1.0.8"
+        targetSdk = 35
+        versionCode = 9
+        versionName = "1.1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
