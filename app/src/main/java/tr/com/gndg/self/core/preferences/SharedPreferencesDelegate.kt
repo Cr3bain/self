@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.activity.ComponentActivity
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
+import androidx.core.content.edit
 
 class SharedPreferencesStringDelegate(
     context: Context,
@@ -12,14 +13,14 @@ class SharedPreferencesStringDelegate(
 ) : ReadWriteProperty<Any?, String> {
 
     private val sharedPreferences by lazy {
-        context.getSharedPreferences("self_prefs", ComponentActivity.MODE_PRIVATE)
+        context.getSharedPreferences("self_prefs", Context.MODE_PRIVATE)
     }
     override fun getValue(thisRef: Any?, property: KProperty<*>): String {
         return sharedPreferences.getString(name, defaultValue) ?: defaultValue
     }
 
     override fun setValue(thisRef: Any?, property: KProperty<*>, value: String) {
-        return sharedPreferences.edit().putString(name, value).apply()
+        return sharedPreferences.edit { putString(name, value) }
     }
 
 }
@@ -31,7 +32,7 @@ class SharedPreferencesLongDelegate(
 ) : ReadWriteProperty<Any?, Long> {
 
     private val sharedPreferences by lazy {
-        context.getSharedPreferences("self_prefs", ComponentActivity.MODE_PRIVATE)
+        context.getSharedPreferences("self_prefs", Context.MODE_PRIVATE)
     }
 
     override fun getValue(thisRef: Any?, property: KProperty<*>): Long {
@@ -39,7 +40,7 @@ class SharedPreferencesLongDelegate(
     }
 
     override fun setValue(thisRef: Any?, property: KProperty<*>, value: Long) {
-         return sharedPreferences.edit().putLong(name, value).apply()
+         return sharedPreferences.edit { putLong(name, value) }
     }
 
 
@@ -52,7 +53,7 @@ class SharedPreferencesBooleanDelegate(
 ) : ReadWriteProperty<Any?, Boolean> {
 
     private val sharedPreferences by lazy {
-        context.getSharedPreferences("self_prefs", ComponentActivity.MODE_PRIVATE)
+        context.getSharedPreferences("self_prefs", Context.MODE_PRIVATE)
     }
 
     override fun getValue(thisRef: Any?, property: KProperty<*>): Boolean {
@@ -60,7 +61,7 @@ class SharedPreferencesBooleanDelegate(
     }
 
     override fun setValue(thisRef: Any?, property: KProperty<*>, value: Boolean) {
-        return sharedPreferences.edit().putBoolean(name, value).apply()
+        return sharedPreferences.edit { putBoolean(name, value) }
     }
 
 

@@ -7,7 +7,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import org.koin.androidx.compose.getViewModel
+import org.koin.androidx.compose.koinViewModel
 import tr.com.gndg.self.core.camera.CameraDestination
 import tr.com.gndg.self.core.camera.CameraOpen
 import tr.com.gndg.self.ui.backup.BackupDestination
@@ -65,7 +65,7 @@ fun SelfNavHost(
 
         composable(route = InventoryDestination.route) {
 
-            val viewModel: InventoryViewModel = getViewModel()
+            val viewModel: InventoryViewModel = koinViewModel()
 
             InventoryScreen(
                 viewModel = viewModel,
@@ -78,7 +78,7 @@ fun SelfNavHost(
 
         composable(route = InventoryDestination.route) {
 
-            val viewModel: InventoryViewModel = getViewModel()
+            val viewModel: InventoryViewModel = koinViewModel()
 
             InventoryScreen(
                 viewModel = viewModel,
@@ -95,7 +95,7 @@ fun SelfNavHost(
                 type = NavType.LongType } ),
         ) {
 
-            val viewModel: InventoryViewModel = getViewModel()
+            val viewModel: InventoryViewModel = koinViewModel()
 
             InventoryScreen(
                 viewModel = viewModel,
@@ -140,7 +140,7 @@ fun SelfNavHost(
                 nullable = true
                 type = NavType.StringType } ),) {
 
-            val viewModel: WarehousesViewModel = getViewModel()
+            val viewModel: WarehousesViewModel = koinViewModel()
 
             WarehousesScreen(
                 navigateBack = { navController.popBackStack() },
@@ -156,7 +156,7 @@ fun SelfNavHost(
                 type = NavType.StringType
             })
         ) {
-            val viewModel: WarehouseFormViewModel = getViewModel()
+            val viewModel: WarehouseFormViewModel = koinViewModel()
             WarehouseFormScreen(
                 navigateBack = { navController.popBackStack() },
                 onNavigateUp = { navController.navigateUp()  },
@@ -289,7 +289,7 @@ fun SelfNavHost(
         ) {backStackEntry->
 
             val supplierUUID = backStackEntry.arguments?.getString(SupplierFormDestination.supplierUUIDArgs)
-            val supplierViewModel : SuppliersViewModel = getViewModel()
+            val supplierViewModel : SuppliersViewModel = koinViewModel()
 
             SupplierFormScreen(
                 navigateBack = { navController.popBackStack() },
@@ -338,7 +338,7 @@ fun SelfNavHost(
         ) {backStackEntry->
 
             val customerUUID = backStackEntry.arguments?.getString(CustomerFormDestination.customerUUIDArgs)
-            val customerViewModel : CustomersViewModel = getViewModel()
+            val customerViewModel : CustomersViewModel = koinViewModel()
 
             CustomerFormScreen(
                 navigateBack = { navController.popBackStack() },

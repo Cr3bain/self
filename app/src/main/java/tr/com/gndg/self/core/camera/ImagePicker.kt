@@ -22,6 +22,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import coil.compose.AsyncImage
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
+import com.google.accompanist.permissions.isGranted
 import com.google.accompanist.permissions.rememberPermissionState
 
 
@@ -115,7 +116,7 @@ fun ImagePicker(
             }
             ElevatedButton(
                 onClick = {
-                    if (cameraPermissionState.hasPermission) {
+                    if (cameraPermissionState.status.isGranted) {
                         toCameraScreen()
   /*                      val uri = ComposeFileProvider.getImageUri(context)
                         imageUri = uri

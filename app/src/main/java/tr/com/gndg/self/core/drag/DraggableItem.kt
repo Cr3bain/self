@@ -19,13 +19,14 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import tr.com.gndg.self.R
+import tr.com.gndg.self.ui.transactions.newTransaction.DragAnchor
 import kotlin.math.roundToInt
 
-@OptIn(ExperimentalFoundationApi::class)
+/*@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun DraggableItem(
-    state: AnchoredDraggableState<DragAnchors>,
-    content: @Composable BoxScope.() -> Unit,
+    state: AnchoredDraggableState<DragAnchor>,
+    content: @Composable (BoxScope.() -> Unit),
     startAction: @Composable (BoxScope.() -> Unit)? = {},
     endAction: @Composable (BoxScope.() -> Unit)? = {}
 ) {
@@ -61,4 +62,4 @@ fun DraggableItem(
             content = content
         )
     }
-}
+}*/

@@ -22,6 +22,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import coil.compose.AsyncImage
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
+import com.google.accompanist.permissions.isGranted
 import com.google.accompanist.permissions.rememberPermissionState
 import tr.com.gndg.self.R
 import tr.com.gndg.self.domain.join.ProductsJoinUiState
@@ -68,7 +69,7 @@ fun PictureStateScreen(
 
             ElevatedButton(
                 onClick = {
-                    if (cameraPermissionState.hasPermission) {
+                    if (cameraPermissionState.status.isGranted) {
                         toCameraScreen()
                         /*                      val uri = ComposeFileProvider.getImageUri(context)
                                               imageUri = uri

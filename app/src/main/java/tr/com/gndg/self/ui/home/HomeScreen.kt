@@ -36,7 +36,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import org.koin.androidx.compose.getViewModel
+import org.koin.androidx.compose.koinViewModel
 import tr.com.gndg.self.R
 import tr.com.gndg.self.core.preferences.sharedPreferencesBoolean
 import tr.com.gndg.self.core.util.Constants
@@ -69,7 +69,7 @@ fun HomeScreen(
     navigateToRoute: (String) -> Unit,
     modifier: Modifier = Modifier,
     warehouseSelectScreen : () -> Unit,
-    homeViewModel: HomeViewModel = getViewModel()
+    homeViewModel: HomeViewModel = koinViewModel()
 ) {
     LaunchedEffect(key1 = homeViewModel) {
         homeViewModel.resetTransaction()

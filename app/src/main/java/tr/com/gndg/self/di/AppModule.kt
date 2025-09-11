@@ -1,9 +1,9 @@
 package tr.com.gndg.self.di
 
-import org.koin.androidx.viewmodel.dsl.viewModelOf
 import org.koin.core.module.dsl.bind
 import org.koin.core.module.dsl.factoryOf
 import org.koin.core.module.dsl.singleOf
+import org.koin.core.module.dsl.viewModel
 import org.koin.dsl.module
 import tr.com.gndg.self.data.CustomerRepositoryImpl
 import tr.com.gndg.self.data.ProductRepositoryImpl
@@ -34,43 +34,45 @@ import tr.com.gndg.self.ui.warehouses.presentation.WarehousesViewModel
 val appModule = module {
 
     //product
-    singleOf(::ProductRepositoryImpl) {bind<ProductRepository>()}
+    singleOf(::ProductRepositoryImpl) { bind<ProductRepository>() }
 
     //warehouse
-    singleOf(::WarehouseRepositoryImpl) { bind<WarehouseRepository>()}
+    singleOf(::WarehouseRepositoryImpl) { bind<WarehouseRepository>() }
     single<WarehouseRepository> { WarehouseRepositoryImpl(get()) }
-    viewModelOf(::WarehousesViewModel)
-    viewModelOf(::WarehouseFormViewModel)
+    viewModel { WarehousesViewModel(get()) }
+    viewModel { WarehousesViewModel(get()) }
+    viewModel { WarehouseFormViewModel(get(), get()) }
 
     //HOME
-    singleOf(::HomeRepositoryImpl) {bind<HomeRepository>()}
-    viewModelOf(::HomeViewModel)
+    singleOf(::HomeRepositoryImpl) { bind<HomeRepository>() }
+    viewModel { HomeViewModel(get(), get()) }
     factoryOf(::HomeUIStateHolder)
 
 
     //Inventory
-    viewModelOf(::InventoryViewModel)
+    viewModel { InventoryViewModel(get(), get(), get(), get()) }
 
     //Product
-    viewModelOf(::ProductViewModel)
+    viewModel { ProductViewModel(get(), get(), get(), get(), get()) }
 
     //Transaction
-    singleOf(::TransactionRepositoryImpl) {bind<TransactionRepository>()}
-    viewModelOf(::TransactionsViewModel)
-    viewModelOf(::NewTransactionViewModel)
+    singleOf(::TransactionRepositoryImpl) { bind<TransactionRepository>() }
+    viewModel { TransactionsViewModel(get(), get()) }
+    viewModel { NewTransactionViewModel(get(), get(), get()) }
 
     //StockRepository
-    singleOf(::StockRepositoryImpl) {bind<StockRepository>()}
+    singleOf(::StockRepositoryImpl) { bind<StockRepository>() }
 
     //supplier
-    singleOf(::SupplierRepositoryImpl) {bind<SupplierRepository>()}
-    viewModelOf(::SuppliersViewModel)
+    singleOf(::SupplierRepositoryImpl) { bind<SupplierRepository>() }
+    viewModel { SuppliersViewModel(get(), get(), get()) }
+
 
     //customer
-    singleOf(::CustomerRepositoryImpl) { bind<CustomerRepository>()}
-    viewModelOf(::CustomersViewModel)
+    singleOf(::CustomerRepositoryImpl) { bind<CustomerRepository>() }
+    viewModel { CustomersViewModel(get(), get(), get()) }
 
     //reports
-    viewModelOf(::ReportsViewModel)
+    viewModel { ReportsViewModel(get()) }
 
 }
